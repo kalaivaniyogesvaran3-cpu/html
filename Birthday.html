@@ -1,0 +1,151 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Akilan Sir!</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+      height: 100vh;
+      position: relative;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 40px;
+      animation: fadeInDown 2s ease-out;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 10px 0 30px;
+      animation: fadeInDown 2.5s ease-out;
+    }
+
+    /* Cake Image */
+    .cake-img {
+      width: 200px;
+      height: auto;
+      margin: 0 auto 30px;
+      animation: popIn 2s ease-in-out;
+    }
+
+    /* Balloons */
+    .balloon {
+      position: absolute;
+      width: 40px;
+      height: 55px;
+      background: radial-gradient(circle at 30% 30%, #fff, red);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      background: #444;
+    }
+
+    .balloon:nth-child(1) {
+      left: 10%;
+      background: radial-gradient(circle at 30% 30%, #fff, #ff4e50);
+      animation-delay: 0s;
+    }
+
+    .balloon:nth-child(2) {
+      left: 30%;
+      background: radial-gradient(circle at 30% 30%, #fff, #fc913a);
+      animation-delay: 2s;
+    }
+
+    .balloon:nth-child(3) {
+      left: 50%;
+      background: radial-gradient(circle at 30% 30%, #fff, #f9d423);
+      animation-delay: 4s;
+    }
+
+    .balloon:nth-child(4) {
+      left: 70%;
+      background: radial-gradient(circle at 30% 30%, #fff, #eae374);
+      animation-delay: 1s;
+    }
+
+    .balloon:nth-child(5) {
+      left: 90%;
+      background: radial-gradient(circle at 30% 30%, #fff, #e1f5c4);
+      animation-delay: 3s;
+    }
+
+    /* Animations */
+    @keyframes float {
+      0% {
+        bottom: -60px;
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(20px);
+      }
+      100% {
+        bottom: 110%;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-size: 1rem;
+      color: #fff;
+      animation: fadeInDown 3s ease-in;
+    }
+  </style>
+</head>
+<body>
+  <!-- Balloons (behind content) -->
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+
+  <!-- Heading -->
+  <h1>🎉 Happy Birthday Akilan Sir 🎂</h1>
+  <h2>Wishing you a day filled with joy and a year full of success!</h2>
+
+  <!-- Cake Image -->
+  <img class="cake-img" src="https://cdn.pixabay.com/photo/2017/01/31/20/15/birthday-2024216_960_720.png" alt="Birthday Cake">
+
+  <!-- Footer -->
+  <div class="footer">
+    — Designed with ❤️ by <strong>Kowthaman</strong>
+  </div>
+</body>
+	</html>
